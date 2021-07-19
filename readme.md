@@ -5,7 +5,7 @@ Ce petit tuto (non complet pour le moment) va vous permettre de monter un setup-
 
 # Le package fournis par FenchFarmer
 
-Vous pouvez télécharger le tout [ici](https://github.com/Tocard/FrenchFarmerMonitoring/releases/download/0.0.1/FrenchFarmer.7z) C'est le fichier zip mentionné durant le tuto.
+Vous pouvez télécharger le tout [ici](https://github.com/Tocard/FrenchFarmerMonitoring/releases) dans les assets. C'est le fichier zip mentionné durant le tuto.
 
 # Telegraf
 
