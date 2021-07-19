@@ -3,6 +3,10 @@
 Ce petit tuto (non complet pour le moment) va vous permettre de monter un setup-up pour vous connecter au grafana de la pool. Malheureusement pour le moment, ce n'est pas magique ni automatique, vous devez vous rapprocher de =<@242241376840974336> | @Mozquito | @Tocard pour avoir accès a grafana.
 
 
+# Le package fournis par FenchFarmer
+
+Vous pouvez téléchargerle tout [ici](https://github.com/Tocard/FrenchFarmerMonitoring/releases/download/0.0.1/FrenchFarmer.7z)
+
 # Telegraf
 
 Afin de recolter des metriques sur votre ordinateur ([c'est quoi une métrique](https://fr.wikipedia.org/wiki/M%C3%A9trique_(logiciel))), on utilise [telegraf](https://www.influxdata.com/time-series-platform/telegraf/). Vous trouverez dans le zip une version de telegraf, libre à vous d'en prendre une autre, elle n'est pas modifié, c'est juste une question de simplicité.  Vous pouvez télécharger cela [ici](https://portal.influxdata.com/downloads/). Prenez soin de ne pas prendre de nighty buyild & une version supérieur à la 1.18.0
