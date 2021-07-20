@@ -6,6 +6,7 @@ Ce petit tuto (non complet pour le moment) va vous permettre de monter un setup-
 # Le package fournis par FenchFarmer
 
 Vous pouvez télécharger le tout [ici](https://github.com/Tocard/FrenchFarmerMonitoring/releases) dans les assets. C'est le fichier zip mentionné durant le tuto.
+Dans ce fichier zip il y a un telegraf.exe, la version 1.18.2 pour rendre la chose plus simple. Si pr soucis de securité vous souhaitez télécharger vous meme une version de teleraf depuis le site influx https://www.influxdata.com (j'insite sur ceci, c'est l'editeur du logiciel), vous trouverez plus bas comment faire pour télécharger le binaire directement depuis chez eux.
 
 # Telegraf
 
@@ -24,22 +25,23 @@ Dans le fichier telegraf.conf, vous allez trouvez des champs avec les clefs au f
 	Ligne 48:   password = "PUT_YOUR_VAL_HERE-PASSWORD" => le password que <@242241376840974336> | @Mozquito | @Tocard va vous donner
 	Ligne 49:   index_name = "chia-PUT_YOUR_VAL_HERE-USER" => le user que <@242241376840974336> | @Mozquito | @Tocard va vous donner
 	
-	Pour trouvez les valeurs suivante, il faut utiliser  "%HOMEPATH%/.chia/mainnet/config/ssl/full_node dans un explorer, ça vous donneras le path, par default, c'est C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node
-    Il ne faut pas mettre le contune du fichier, juste le chemin.
+	Pour trouvez les valeurs suivante, il faut utiliser  "%HOMEPATH%/.chia/mainnet/config/ssl/full_node dans un explorer, ça vous donneras le path, par default, c'est C:/Users//**Votre_User**//.chia/mainnet/config/ssl/full_node
+    Il ne faut pas mettre le contenue du fichier, juste le chemin.
 	
-	Ligne 186:   tls_cert = "PUT_YOUR_VAL_HERE-PATH/private_full_node.crt"  => C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node\private_full_node.crt
-	Ligne 187:   tls_key = "PUT_YOUR_VAL_HERE-PATH/private_full_node.key" => C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node\private_full_node.key
-	Ligne 209:   tls_cert = "PUT_YOUR_VAL_HERE-PATH/private_full_node.crt" => C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node\private_full_node.crt
-	Ligne 210:   tls_key = "PUT_YOUR_VAL_HERE-PATH/private_full_node.key" C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node\private_full_node.key
-	Ligne 230:   tls_cert = "PUT_YOUR_VAL_HERE-PATH/private_full_node.crt" => C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node\private_full_node.crt
-	Ligne 231:   tls_key = "PUT_YOUR_VAL_HERE-PATH/private_full_node.key" C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node\private_full_node.key
-	Ligne 253:   tls_cert = "PUT_YOUR_VAL_HERE-PATH/private_full_node.crt" => C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node\private_full_node.crt
-	Ligne 254:   tls_key = "PUT_YOUR_VAL_HERE-PATH/private_full_node.key" C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node\private_full_node.key
+    Petit appel: sur windows, les path sont soit /votre/path ou alors \\votre\\path. 
+	Ligne 186:   tls_cert = "PUT_YOUR_VAL_HERE-PATH/private_full_node.crt"  => C:/Users/**Votre_User**/.chia/mainnet/config/ssl/full_node/private_full_node.crt
+	Ligne 187:   tls_key = "PUT_YOUR_VAL_HERE-PATH/private_ca.key" => C:/Users/**Votre_User**/.chia/mainnet/config/ssl/full_node/private_ca.key
+	Ligne 209:   tls_cert = "PUT_YOUR_VAL_HERE-PATH/private_full_node.crt" => C:/Users/**Votre_User**/.chia/mainnet/config/ssl/full_node/private_full_node.crt
+	Ligne 210:   tls_key = "PUT_YOUR_VAL_HERE-PATH/private_ca.key" C:/Users/**Votre_User**/.chia/mainnet/config/ssl/full_node/private_ca.key
+	Ligne 230:   tls_cert = "PUT_YOUR_VAL_HERE-PATH/private_full_node.crt" => C:/Users/**Votre_User**/.chia/mainnet/config/ssl/full_node/private_full_node.crt
+	Ligne 231:   tls_key = "PUT_YOUR_VAL_HERE-PATH/private_ca.key" C:/Users/**Votre_User**/.chia/mainnet/config/ssl/full_node/private_ca.key
+	Ligne 253:   tls_cert = "PUT_YOUR_VAL_HERE-PATH/private_full_node.crt" => C:/Users/**Votre_User**/.chia/mainnet/config/ssl/full_node/private_full_node.crt
+	Ligne 254:   tls_key = "PUT_YOUR_VAL_HERE-PATH/private_ca.key" C:/Users/**Votre_User**/.chia/mainnet/config/ssl/full_node/private_ca.key
 
     Ligne 267:   "https://api.frenchfarmers.net/farmer/PUT_YOUR_VAL_HERE-LAUNCHER_ID_WITHOUT_0x" => mettre le launcher id sans le 0x devant
 
-	Ligne 271:   tls_cert = "PUT_YOUR_VAL_HERE-PATH/private_full_node.crt" => C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node\private_full_node.crt
-	Ligne 272:   tls_key = "PUT_YOUR_VAL_HERE-PATH/private_full_node.key" C:\Users\\**Votre_User**\\.chia\mainnet\config\ssl\full_node\private_full_node.key
+	Ligne 271:   tls_cert = "PUT_YOUR_VAL_HERE-PATH/private_full_node.crt" => C:/Users//**Votre_User**//.chia/mainnet/config/ssl/full_node/private_full_node.crt
+	Ligne 272:   tls_key = "PUT_YOUR_VAL_HERE-PATH/private_ca.key" C:/Users//**Votre_User**//.chia/mainnet/config/ssl/full_node/private_ca.key
 
 ## Lancement du telegraf
 
