@@ -6,7 +6,7 @@ Ce petit tuto (non complet pour le moment) va vous permettre de monter un setup-
 # Le package fournis par FenchFarmer
 
 Vous pouvez télécharger le tout [ici](https://github.com/Tocard/FrenchFarmerMonitoring/releases) dans les assets. C'est le fichier zip mentionné durant le tuto.
-Dans ce fichier zip il y a un telegraf.exe, la version 1.18.2 pour rendre la chose plus simple. Si par soucis de securité vous souhaitez télécharger vous meme une version de teleraf , faite le depuis https://www.influxdata.com (j'insite sur ceci, c'est l'editeur du logiciel). Vous trouverez plus bas comment faire pour télécharger le binaire directement depuis chez eux.
+Dans ce fichier zip il y a un telegraf.exe, la version 1.18.2 pour rendre la chose plus simple. Si par soucis de securité vous souhaitez télécharger vous meme une version de teleraf , faite le depuis https://www.influxdata.com (j'insiste sur ceci, c'est l'editeur du logiciel). Vous trouverez plus bas comment faire pour télécharger le binaire directement depuis chez eux.
 
 # Telegraf
 
